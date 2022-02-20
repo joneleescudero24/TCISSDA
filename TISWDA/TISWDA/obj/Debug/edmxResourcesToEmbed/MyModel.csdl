@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaguigSurveySystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Barangay">
+    <Key>
+      <PropertyRef Name="Barangay_id" />
+    </Key>
+    <Property Name="Barangay_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Unemployed" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="p01" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p02" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p03" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p04" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p05" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p06" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p07" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p08" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p09" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p010" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p011" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p012" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013a" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013b" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013c" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013d" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013e" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p013f" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p014" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p016" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="p016_course" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="TaguigSurveySystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Barangays" EntityType="Self.Barangay" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaguigSurveySystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Barangay">
+    <Key>
+      <PropertyRef Name="Barangay_id" />
+    </Key>
+    <Property Name="Barangay_id" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Barangay_Districts" Type="varchar" MaxLength="100" />
+    <Property Name="Employment" Type="varchar" MaxLength="100" />
+    <Property Name="p01" Type="varchar" MaxLength="100" />
+    <Property Name="p02" Type="varchar" MaxLength="100" />
+    <Property Name="p03" Type="varchar" MaxLength="100" />
+    <Property Name="p04" Type="varchar" MaxLength="100" />
+    <Property Name="p05" Type="varchar" MaxLength="100" />
+    <Property Name="p06" Type="varchar" MaxLength="100" />
+    <Property Name="p07" Type="varchar" MaxLength="100" />
+    <Property Name="p08" Type="varchar" MaxLength="100" />
+    <Property Name="p09" Type="varchar" MaxLength="100" />
+    <Property Name="p010" Type="varchar" MaxLength="100" />
+    <Property Name="p011" Type="varchar" MaxLength="100" />
+    <Property Name="p012" Type="varchar" MaxLength="100" />
+    <Property Name="p013" Type="varchar" MaxLength="100" />
+    <Property Name="p013a" Type="varchar" MaxLength="100" />
+    <Property Name="p013b" Type="varchar" MaxLength="100" />
+    <Property Name="p013c" Type="varchar" MaxLength="100" />
+    <Property Name="p013d" Type="varchar" MaxLength="100" />
+    <Property Name="p013e" Type="varchar" MaxLength="100" />
+    <Property Name="p013f" Type="varchar" MaxLength="100" />
+    <Property Name="p014" Type="varchar" MaxLength="100" />
+    <Property Name="p016" Type="varchar" MaxLength="100" />
+    <Property Name="p016course" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="TaguigSurveySystemModelStoreContainer">
+    <EntitySet Name="Barangay" EntityType="Self.Barangay" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

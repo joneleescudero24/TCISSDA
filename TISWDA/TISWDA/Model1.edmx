@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TaguigSurveySystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Barangay">
+          <Key>
+            <PropertyRef Name="Barangay_id" />
+          </Key>
+          <Property Name="Barangay_id" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Barangay_Districts" Type="varchar" MaxLength="100" />
+          <Property Name="Employment" Type="varchar" MaxLength="100" />
+          <Property Name="p01" Type="varchar" MaxLength="100" />
+          <Property Name="p02" Type="varchar" MaxLength="100" />
+          <Property Name="p03" Type="varchar" MaxLength="100" />
+          <Property Name="p04" Type="varchar" MaxLength="100" />
+          <Property Name="p05" Type="varchar" MaxLength="100" />
+          <Property Name="p06" Type="varchar" MaxLength="100" />
+          <Property Name="p07" Type="varchar" MaxLength="100" />
+          <Property Name="p08" Type="varchar" MaxLength="100" />
+          <Property Name="p09" Type="varchar" MaxLength="100" />
+          <Property Name="p010" Type="varchar" MaxLength="100" />
+          <Property Name="p011" Type="varchar" MaxLength="100" />
+          <Property Name="p012" Type="varchar" MaxLength="100" />
+          <Property Name="p013" Type="varchar" MaxLength="100" />
+          <Property Name="p013a" Type="varchar" MaxLength="100" />
+          <Property Name="p013b" Type="varchar" MaxLength="100" />
+          <Property Name="p013c" Type="varchar" MaxLength="100" />
+          <Property Name="p013d" Type="varchar" MaxLength="100" />
+          <Property Name="p013e" Type="varchar" MaxLength="100" />
+          <Property Name="p013f" Type="varchar" MaxLength="100" />
+          <Property Name="p014" Type="varchar" MaxLength="100" />
+          <Property Name="p016" Type="varchar" MaxLength="100" />
+          <Property Name="p016course" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="TaguigSurveySystemModelStoreContainer">
+          <EntitySet Name="Barangay" EntityType="Self.Barangay" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TaguigSurveySystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Barangay">
+          <Key>
+            <PropertyRef Name="Barangay_id" />
+          </Key>
+          <Property Name="Barangay_id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Barangay_Districts" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Employment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p01" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p02" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p03" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p04" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p05" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p06" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p07" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p08" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p09" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p010" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p011" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p012" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013a" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013b" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013c" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013d" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013e" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p013f" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p014" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p016" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p016course" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="TaguigSurveySystemEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Barangays" EntityType="Self.Barangay" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TaguigSurveySystemModelStoreContainer" CdmEntityContainer="TaguigSurveySystemEntities2">
+          <EntitySetMapping Name="Barangays">
+            <EntityTypeMapping TypeName="TaguigSurveySystemModel.Barangay">
+              <MappingFragment StoreEntitySet="Barangay">
+                <ScalarProperty Name="Barangay_id" ColumnName="Barangay_id" />
+                <ScalarProperty Name="Barangay_Districts" ColumnName="Barangay_Districts" />
+                <ScalarProperty Name="Employment" ColumnName="Employment" />
+                <ScalarProperty Name="p01" ColumnName="p01" />
+                <ScalarProperty Name="p02" ColumnName="p02" />
+                <ScalarProperty Name="p03" ColumnName="p03" />
+                <ScalarProperty Name="p04" ColumnName="p04" />
+                <ScalarProperty Name="p05" ColumnName="p05" />
+                <ScalarProperty Name="p06" ColumnName="p06" />
+                <ScalarProperty Name="p07" ColumnName="p07" />
+                <ScalarProperty Name="p08" ColumnName="p08" />
+                <ScalarProperty Name="p09" ColumnName="p09" />
+                <ScalarProperty Name="p010" ColumnName="p010" />
+                <ScalarProperty Name="p011" ColumnName="p011" />
+                <ScalarProperty Name="p012" ColumnName="p012" />
+                <ScalarProperty Name="p013" ColumnName="p013" />
+                <ScalarProperty Name="p013a" ColumnName="p013a" />
+                <ScalarProperty Name="p013b" ColumnName="p013b" />
+                <ScalarProperty Name="p013c" ColumnName="p013c" />
+                <ScalarProperty Name="p013d" ColumnName="p013d" />
+                <ScalarProperty Name="p013e" ColumnName="p013e" />
+                <ScalarProperty Name="p013f" ColumnName="p013f" />
+                <ScalarProperty Name="p014" ColumnName="p014" />
+                <ScalarProperty Name="p016" ColumnName="p016" />
+                <ScalarProperty Name="p016course" ColumnName="p016course" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

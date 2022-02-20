@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaguigSurveySystemModelStoreContainer" CdmEntityContainer="TaguigSurveySystemEntities2">
+    <EntitySetMapping Name="Barangays">
+      <EntityTypeMapping TypeName="TaguigSurveySystemModel.Barangay">
+        <MappingFragment StoreEntitySet="Barangay">
+          <ScalarProperty Name="Barangay_id" ColumnName="Barangay_id" />
+          <ScalarProperty Name="Barangay_Districts" ColumnName="Barangay_Districts" />
+          <ScalarProperty Name="Employment" ColumnName="Employment" />
+          <ScalarProperty Name="p01" ColumnName="p01" />
+          <ScalarProperty Name="p02" ColumnName="p02" />
+          <ScalarProperty Name="p03" ColumnName="p03" />
+          <ScalarProperty Name="p04" ColumnName="p04" />
+          <ScalarProperty Name="p05" ColumnName="p05" />
+          <ScalarProperty Name="p06" ColumnName="p06" />
+          <ScalarProperty Name="p07" ColumnName="p07" />
+          <ScalarProperty Name="p08" ColumnName="p08" />
+          <ScalarProperty Name="p09" ColumnName="p09" />
+          <ScalarProperty Name="p010" ColumnName="p010" />
+          <ScalarProperty Name="p011" ColumnName="p011" />
+          <ScalarProperty Name="p012" ColumnName="p012" />
+          <ScalarProperty Name="p013" ColumnName="p013" />
+          <ScalarProperty Name="p013a" ColumnName="p013a" />
+          <ScalarProperty Name="p013b" ColumnName="p013b" />
+          <ScalarProperty Name="p013c" ColumnName="p013c" />
+          <ScalarProperty Name="p013d" ColumnName="p013d" />
+          <ScalarProperty Name="p013e" ColumnName="p013e" />
+          <ScalarProperty Name="p013f" ColumnName="p013f" />
+          <ScalarProperty Name="p014" ColumnName="p014" />
+          <ScalarProperty Name="p016" ColumnName="p016" />
+          <ScalarProperty Name="p016course" ColumnName="p016course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
